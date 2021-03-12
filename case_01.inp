@@ -1,8 +1,8 @@
 problem   case=case_01 
-    hp   p,bar=100.0,  t,k=300
+    hp   p,bar=1,  t,k=300
 react 
-    fuel=H2 wt=1,  t,k=300
-    oxid=O2 wt=1,  t,k=300
+    fuel=H2 wt=8.002e-08,  t,k=300
+    oxid=O2 wt=0.0,  t,k=300
 output  transport short 
     plot o/f p t m cp H2 O2 H2O H2O(L) OH O H O3
 end 

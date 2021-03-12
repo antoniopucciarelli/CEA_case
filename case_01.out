@@ -10,10 +10,10 @@
 
 
  problem   case=case_01
-     hp   p,bar=100.0,  t,k=300
+     hp   p,bar=1,  t,k=300
  react
-     fuel=H2 wt=1,  t,k=300
-     oxid=O2 wt=1,  t,k=300
+     fuel=H2 wt=8.002e-08,  t,k=300
+     oxid=O2 wt=0.0,  t,k=300
  output  transport short
      plot o/f p t m cp H2 O2 H2O H2O(L) OH O H O3
  end
@@ -31,48 +31,47 @@
              REACTANT                    WT FRACTION      ENERGY      TEMP
                                           (SEE NOTE)     KJ/KG-MOL      K  
  FUEL        H2                           1.0000000        53.359    300.000
- OXIDANT     O2                           1.0000000        54.358    300.000
+ OXIDANT     O2                           0.0000000        54.358    300.000
 
- O/F=    1.00000  %FUEL= 50.000000  R,EQ.RATIO= 7.936683  PHI,EQ.RATIO= 7.936683
+ O/F=    0.00000  %FUEL=100.000000  R,EQ.RATIO= 0.000000  PHI,EQ.RATIO= 0.000000
 
  THERMODYNAMIC PROPERTIES
 
- P, BAR            100.00
- T, K             1284.04
- RHO, KG/CU M    3.7764 0
- H, KJ/KG          14.084
- U, KJ/KG        -2633.92
- G, KJ/KG        -46970.2
- S, KJ/(KG)(K)    36.5911
+ P, BAR            1.0000
+ T, K              300.00
+ RHO, KG/CU M    8.0818-2
+ H, KJ/KG          26.390
+ U, KJ/KG        -1210.96
+ G, KJ/KG        -19447.9
+ S, KJ/(KG)(K)    64.9144
 
- M, (1/n)           4.032
+ M, (1/n)           2.016
  (dLV/dLP)t      -1.00000
  (dLV/dLT)p        1.0000
- Cp, KJ/(KG)(K)    8.1986
- GAMMAs            1.3361
- SON VEL,M/SEC     1880.9
+ Cp, KJ/(KG)(K)   14.3109
+ GAMMAs            1.4049
+ SON VEL,M/SEC     1318.5
 
  TRANSPORT PROPERTIES (GASES ONLY)
    CONDUCTIVITY IN UNITS OF MILLIWATTS/(CM)(K)
 
- VISC,MILLIPOISE  0.34545
+ VISC,MILLIPOISE  0.08974
 
   WITH EQUILIBRIUM REACTIONS
 
- Cp, KJ/(KG)(K)    8.1986
- CONDUCTIVITY      4.6177
- PRANDTL NUMBER    0.6133
+ Cp, KJ/(KG)(K)   14.3109
+ CONDUCTIVITY      1.8781
+ PRANDTL NUMBER    0.6838
 
   WITH FROZEN REACTIONS
 
- Cp, KJ/(KG)(K)    8.1986
- CONDUCTIVITY      4.6176
- PRANDTL NUMBER    0.6133
+ Cp, KJ/(KG)(K)   14.3109
+ CONDUCTIVITY      1.8781
+ PRANDTL NUMBER    0.6838
 
  MOLE FRACTIONS
 
- *H2              0.87400
- H2O              0.12600
+ *H2              1.00000
 
   * THERMODYNAMIC PROPERTIES FITTED TO 20000.K
 
