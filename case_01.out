@@ -10,11 +10,11 @@
 
 
  problem   case=case_01
-     hp   p,bar=1,  t,k=300
+     hp   p,bar=100
  react
      fuel=H2 wt=0.025000000000000022,  t,k=300
      oxid=O2 wt=0.975,  t,k=300
- output  transport short
+ output  transport short trace= 1e-10
      plot o/f p t m cp H H2 O O2 O3 OH H2O H2O(L)
  end
 
@@ -37,47 +37,49 @@
 
  THERMODYNAMIC PROPERTIES
 
- P, BAR            1.0000
- T, K             2308.44
- RHO, KG/CU M    1.4097-1
+ P, BAR            100.00
+ T, K             2379.55
+ RHO, KG/CU M    1.3750 1
  H, KJ/KG          2.3180
- U, KJ/KG         -707.04
- G, KJ/KG        -23802.3
- S, KJ/(KG)(K)    10.3120
+ U, KJ/KG         -724.97
+ G, KJ/KG        -21178.9
+ S, KJ/(KG)(K)     8.9014
 
- M, (1/n)          27.058
- (dLV/dLP)t      -1.00267
- (dLV/dLT)p        1.0789
- Cp, KJ/(KG)(K)    2.3311
- GAMMAs            1.1776
- SON VEL,M/SEC      914.0
+ M, (1/n)          27.204
+ (dLV/dLP)t      -1.00073
+ (dLV/dLT)p        1.0215
+ Cp, KJ/(KG)(K)    1.8176
+ GAMMAs            1.2118
+ SON VEL,M/SEC      938.8
 
  TRANSPORT PROPERTIES (GASES ONLY)
    CONDUCTIVITY IN UNITS OF MILLIWATTS/(CM)(K)
 
- VISC,MILLIPOISE  0.83689
+ VISC,MILLIPOISE  0.85237
 
   WITH EQUILIBRIUM REACTIONS
 
- Cp, KJ/(KG)(K)    2.3311
- CONDUCTIVITY      3.1892
- PRANDTL NUMBER    0.6117
+ Cp, KJ/(KG)(K)    1.8176
+ CONDUCTIVITY      2.2288
+ PRANDTL NUMBER    0.6951
 
   WITH FROZEN REACTIONS
 
- Cp, KJ/(KG)(K)    1.6008
- CONDUCTIVITY      1.8366
- PRANDTL NUMBER    0.7294
+ Cp, KJ/(KG)(K)    1.6097
+ CONDUCTIVITY      1.8836
+ PRANDTL NUMBER    0.7284
 
  MOLE FRACTIONS
 
- *H               0.00030
- HO2              0.00004
- *H2              0.00087
- H2O              0.32446
- *O               0.00420
- *OH              0.02011
- *O2              0.65002
+ *H              1.6598-5
+ HO2             1.4435-4
+ *H2             1.3207-4
+ H2O             3.3299-1
+ H2O2            1.4630-5
+ *O              6.2963-4
+ *OH             8.2956-3
+ *O2             6.5777-1
+ O3              1.3374-6
 
   * THERMODYNAMIC PROPERTIES FITTED TO 20000.K
 
