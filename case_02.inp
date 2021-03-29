@@ -1,0 +1,8 @@
+problem   case=case_02
+    hp   p,bar=1,  t,k=3800
+react  
+  fuel=H2 wt=4  t,k=273.15  
+  oxid=O2 wt=2  t,k=273.15  
+output  short massf   
+    plot o/f H H2 O O2 H2O OH O3
+end
