@@ -10,10 +10,10 @@
 
 
  problem   case=case_01
-     hp   p,bar=25.75
+     hp   p,bar=100.0
  react
-     fuel=H2 wt=0.4,  t,k=339.7590361445783
-     oxid=O2 wt=1,  t,k=339.7590361445783
+     fuel=H2 wt=0.9,  t,k=300
+     oxid=O2 wt=0.1,  t,k=300
  output  transport short trace= 1e-10
      plot o/f p t m cp H H2 O O2 O3 OH H2O H2O(L)
  end
@@ -30,55 +30,49 @@
 
              REACTANT                    WT FRACTION      ENERGY      TEMP
                                           (SEE NOTE)     KJ/KG-MOL      K  
- FUEL        H2                           1.0000000      1204.817    339.759
- OXIDANT     O2                           1.0000000      1227.283    339.759
+ FUEL        H2                           1.0000000        53.359    300.000
+ OXIDANT     O2                           1.0000000        54.358    300.000
 
- O/F=    2.50000  %FUEL= 28.571429  R,EQ.RATIO= 3.174673  PHI,EQ.RATIO= 3.174673
+ O/F=    0.11111  %FUEL= 90.000000  R,EQ.RATIO=71.430145  PHI,EQ.RATIO=71.430145
 
  THERMODYNAMIC PROPERTIES
 
- P, BAR            25.750
- T, K             2430.47
- RHO, KG/CU M    8.9757-1
- H, KJ/KG          198.16
- U, KJ/KG        -2670.70
- G, KJ/KG        -68338.6
- S, KJ/(KG)(K)    28.1990
+ P, BAR            100.00
+ T, K              416.14
+ RHO, KG/CU M    6.4735 0
+ H, KJ/KG          23.992
+ U, KJ/KG        -1520.76
+ G, KJ/KG        -19211.4
+ S, KJ/(KG)(K)    46.2229
 
- M, (1/n)           7.044
- (dLV/dLP)t      -1.00082
- (dLV/dLT)p        1.0190
- Cp, KJ/(KG)(K)    6.4115
- GAMMAs            1.2351
- SON VEL,M/SEC     1882.4
+ M, (1/n)           2.240
+ (dLV/dLP)t      -1.00000
+ (dLV/dLT)p        1.0000
+ Cp, KJ/(KG)(K)   13.0719
+ GAMMAs            1.3966
+ SON VEL,M/SEC     1468.8
 
  TRANSPORT PROPERTIES (GASES ONLY)
    CONDUCTIVITY IN UNITS OF MILLIWATTS/(CM)(K)
 
- VISC,MILLIPOISE  0.67902
+ VISC,MILLIPOISE  0.11812
 
   WITH EQUILIBRIUM REACTIONS
 
- Cp, KJ/(KG)(K)    6.4115
- CONDUCTIVITY      7.7168
- PRANDTL NUMBER    0.5642
+ Cp, KJ/(KG)(K)   13.0719
+ CONDUCTIVITY      2.3129
+ PRANDTL NUMBER    0.6676
 
   WITH FROZEN REACTIONS
 
- Cp, KJ/(KG)(K)    5.8909
- CONDUCTIVITY      6.4677
- PRANDTL NUMBER    0.6185
+ Cp, KJ/(KG)(K)   13.0719
+ CONDUCTIVITY      2.3129
+ PRANDTL NUMBER    0.6676
 
  MOLE FRACTIONS
 
- *H              2.9942-3
- HO2             1.1721-9
- *H2             6.8253-1
- H2O             3.1418-1
- H2O2            3.7018-9
- *O              7.6425-7
- *OH             2.9052-4
- *O2             1.4512-7
+ *H2             9.8600-1
+ H2O             1.4000-2
 
   * THERMODYNAMIC PROPERTIES FITTED TO 20000.K
 
